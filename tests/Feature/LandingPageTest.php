@@ -90,6 +90,30 @@ final class LandingPageTest extends TestCase
         $this->assertStringContainsString('Diagnóstico da Educação Infantil', $body);
     }
 
+    public function testIdentificacaoMantenedoraExibidaNoTopoERodape(): void
+    {
+        [$status, $body] = $this->request('GET', '/');
+
+        $this->assertSame(200, $status);
+        $this->assertStringContainsString('Igreja Batista Nacional da Paz de Guapó', $body);
+        $this->assertStringContainsString('02.930.019/0001-62', $body);
+        $this->assertStringContainsString('Rua Presidente Kennedy, Qd. 21, Lt. 13', $body);
+        $this->assertStringContainsString('ibnpguapo.org.br', $body);
+        $this->assertStringContainsString('Esta Igreja Ama Você', $body);
+        $this->assertStringContainsString('13.019/2014', $body);
+    }
+
+    public function testSchemaOrgPossuiMantenedoraComoParentOrganization(): void
+    {
+        [$status, $body] = $this->request('GET', '/');
+
+        $this->assertSame(200, $status);
+        $this->assertMatchesRegularExpression('/"parentOrganization"\s*:\s*\{/', $body);
+        $this->assertStringContainsString('https://ibnpguapo.org.br', $body);
+        $this->assertStringContainsString('"@type": "Church"', $body);
+        $this->assertStringContainsString('"taxID": "02.930.019/0001-62"', $body);
+    }
+
     /**
      * @return array{0: int, 1: string}
      */

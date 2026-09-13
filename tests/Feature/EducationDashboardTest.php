@@ -97,6 +97,17 @@ final class EducationDashboardTest extends TestCase
         $this->assertStringContainsString('Página não encontrada', $body);
     }
 
+    public function testPainelEducacaoExibeIdentificacaoMantenedora(): void
+    {
+        [$status, $body] = $this->request('GET', '/painel-educacao');
+
+        $this->assertSame(200, $status);
+        $this->assertStringContainsString('Igreja Batista Nacional da Paz de Guapó', $body);
+        $this->assertStringContainsString('02.930.019/0001-62', $body);
+        $this->assertStringContainsString('ibnpguapo.org.br', $body);
+        $this->assertStringContainsString('Lei 13.019/2014', $body);
+    }
+
     /**
      * Executa o front controller real com um request HTTP simulado.
      *

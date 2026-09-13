@@ -37,9 +37,21 @@
                 </a>
             </div>
         </div>
-        <div class="mt-10 border-t border-slate-800 pt-6 text-center text-xs text-slate-400">
-            Fontes: IBGE · Censo Demográfico 2022 (Tabela 9514) e INEP · Censo Escolar (2008–2025).
-            Cache consolidado em <code class="text-slate-300">storage/data/guapo_education_cache.json</code>.
+
+        {{-- Bloco Formal de Governança e Transparência OSC Mantenedora (MROSC Art. 11) --}}
+        <div class="mt-12">
+            @include('components.osc-governance-card')
+        </div>
+
+        <div class="mt-10 border-t border-slate-800 pt-6 text-center text-xs text-slate-400 space-y-1.5">
+            <p>
+                Escola Social de Guapó · Gerida pela <strong>Igreja Batista Nacional da Paz de Guapó</strong> (CNPJ 02.930.019/0001-62).
+                Conformidade MROSC (Lei 13.019/2014) · <a href="https://ibnpguapo.org.br" target="_blank" rel="noopener noreferrer" class="text-[#ff8d75] hover:underline font-semibold">ibnpguapo.org.br</a>
+            </p>
+            <p>
+                Fontes de Dados Públicos: IBGE · Censo Demográfico 2022 (Tabela 9514) e INEP · Censo Escolar (2008–2025).
+                Cache consolidado em <code class="text-slate-300">storage/data/guapo_education_cache.json</code>.
+            </p>
         </div>
     </div>
 </footer>

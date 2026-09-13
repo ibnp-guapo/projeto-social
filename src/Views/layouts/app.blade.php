@@ -57,6 +57,7 @@
     </style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 antialiased selection:bg-brand-500 selection:text-white">
+    @include('components.institutional-topbar')
     @yield('content')
 </body>
 </html>

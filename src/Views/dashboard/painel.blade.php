@@ -302,8 +302,9 @@
                     Transparência Contábil & Prestação de Contas da Obra
                 </h2>
                 <p class="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">
-                    Em conformidade com os princípios do Marco Regulatório das Organizações da Sociedade Civil (MROSC),
-                    todos os recursos captados para a Fase 3 da obra são movimentados em conta bancária exclusiva,
+                    Em conformidade com os princípios do Marco Regulatório das Organizações da Sociedade Civil (MROSC — Lei 13.019/2014),
+                    a Escola Social de Guapó é gerida pela <strong>Igreja Batista Nacional da Paz de Guapó</strong> (CNPJ 02.930.019/0001-62).
+                    Todos os recursos captados para a Fase 3 da obra são movimentados em conta bancária vinculada exclusiva,
                     com segregação patrimonial estrita e publicação periódica de comprovantes fiscais.
                 </p>
 

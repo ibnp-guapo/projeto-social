@@ -23,6 +23,29 @@
         "@type": "NGO",
         "name": "Escola Social de Guapó",
         "description": "Projeto social de educação infantil, contraturno escolar e centro comunitário em Guapó-GO",
+        "parentOrganization": {
+            "@type": "Church",
+            "name": "Igreja Batista Nacional da Paz de Guapó",
+            "legalName": "Igreja Batista Nacional da Paz de Guapó",
+            "alternateName": "IBN da Paz de Guapó",
+            "taxID": "02.930.019/0001-62",
+            "slogan": "Esta Igreja Ama Você",
+            "url": "https://ibnpguapo.org.br",
+            "sameAs": [
+                "https://instagram.com/ibnp_guapo"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua Presidente Kennedy, Qd. 21, Lt. 13 - Centro",
+                "addressLocality": "Guapó",
+                "addressRegion": "GO",
+                "addressCountry": "BR"
+            }
+        },
+        "founder": {
+            "@type": "Church",
+            "name": "Igreja Batista Nacional da Paz de Guapó"
+        },
         "areaServed": {
             "@type": "City",
             "name": "Guapó",
@@ -77,6 +100,7 @@
 <body class="min-h-screen bg-slate-50 text-slate-900 antialiased selection:bg-brand-500 selection:text-white">
 
     <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+        @include('components.institutional-topbar')
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="/" class="flex items-center gap-3 group">
@@ -124,12 +148,17 @@
         </nav>
     </header>
 
-    <main class="pt-20">
+    <main class="pt-28">
         @yield('content')
     </main>
 
     <footer class="bg-slate-950 text-slate-300 border-t border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            {{-- Bloco Formal de Governança e Transparência OSC Mantenedora (MROSC Art. 11) --}}
+            <div class="mb-14">
+                @include('components.osc-governance-card')
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
@@ -142,7 +171,7 @@
                         </div>
                     </div>
                     <p class="text-sm text-slate-400 max-w-md leading-relaxed mb-6">
-                        Associação sem fins lucrativos dedicada a combater o déficit educacional na infância (a partir de 2 anos), ofertar contraturno escolar de excelência e promover o acolhimento comunitário em Guapó-GO.
+                        Iniciativa comunitária sem fins lucrativos gerida pela <strong>Igreja Batista Nacional da Paz de Guapó</strong> (CNPJ 02.930.019/0001-62). Dedicada a combater o déficit educacional na infância (a partir de 2 anos), ofertar contraturno escolar e acolhimento em Guapó-GO.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs">
                         <span class="px-3 py-1 bg-slate-900 rounded-full border border-slate-800 text-slate-300">Lei 13.019/2014 (MROSC)</span>
@@ -158,6 +187,7 @@
                         <li><a href="#dados" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-brand-400">→</span> Diagnóstico Social</a></li>
                         <li><a href="#cotas" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-brand-400">→</span> Cotas de Apadrinhamento</a></li>
                         <li><a href="/api/indicadores/guapo/download" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-brand-400">→</span> Download do Diagnóstico (JSON)</a></li>
+                        <li><a href="https://ibnpguapo.org.br" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5"><span class="text-[#ff8d75]">→</span> Portal IBN da Paz</a></li>
                         <li><a href="https://github.com/fabiooliveir/projeto-social" class="hover:text-white transition-colors flex items-center gap-1.5" target="_blank" rel="noopener"><span class="text-brand-400">→</span> Repositório GitHub</a></li>
                     </ul>
                 </div>
@@ -166,7 +196,7 @@
                     <h3 class="font-display font-bold text-white text-sm tracking-wider uppercase mb-4">Sede & Contato</h3>
                     <ul class="space-y-2.5 text-sm text-slate-400 mb-6">
                         <li class="flex items-start gap-2">
-                            <span>📍</span> <span>Guapó - GO, Brasil</span>
+                            <span>📍</span> <span>Rua Presidente Kennedy, Qd. 21, Lt. 13 - Centro, Guapó - GO</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span>✉️</span> <a href="mailto:contato@escolasocialguapo.org.br" class="hover:text-white transition-colors">contato@escolasocialguapo.org.br</a>
@@ -174,13 +204,13 @@
                     </ul>
                     <div class="p-3.5 bg-slate-900/90 rounded-xl border border-slate-800 text-xs text-slate-400">
                         <p class="font-semibold text-slate-200 mb-1">Transparência & Governança</p>
-                        <p>Prestação de contas contínua com segregação financeira exclusiva para obras e atividades pedagógicas.</p>
+                        <p>Prestação de contas contínua sob regime MROSC com segregação financeira exclusiva para a Escola Social.</p>
                     </div>
                 </div>
             </div>
 
             <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
-                <p>&copy; {{ date('Y') }} Projeto Social Guapó. Todos os direitos reservados. Plataforma de Captação e Transparência Pública.</p>
+                <p>&copy; {{ date('Y') }} Escola Social de Guapó · Gerida pela Igreja Batista Nacional da Paz de Guapó (CNPJ: 02.930.019/0001-62). Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
