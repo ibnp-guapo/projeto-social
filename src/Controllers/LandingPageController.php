@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
+use App\Services\ConsorcioFase2Service;
 use Jenssegers\Blade\Blade;
 
 final class LandingPageController
@@ -16,11 +17,13 @@ final class LandingPageController
     public function index(): void
     {
         $cotas = $this->cotasDisponiveis();
+        $consorcio = (new ConsorcioFase2Service())->calcularProgresso();
 
         header('Content-Type: text/html; charset=utf-8');
 
         echo $this->blade->render('landing.index', [
-            'cotas' => $cotas,
+            'cotas'     => $cotas,
+            'consorcio' => $consorcio,
         ]);
     }
 

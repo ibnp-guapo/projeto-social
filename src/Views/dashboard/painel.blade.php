@@ -340,6 +340,64 @@
                     </div>
                 </div>
 
+                {{-- Consórcio Estrutural da Fase 2 — Detalhamento Contábil --}}
+                <div class="mt-10 rounded-3xl border border-brand-200/80 bg-gradient-to-br from-brand-50/70 via-white to-white p-6 sm:p-8 shadow-sm" aria-labelledby="consorcio-fase2-titulo">
+                    <div class="flex flex-wrap items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <span class="p-2.5 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-2xl">account_balance</span>
+                            </span>
+                            <div>
+                                <h3 id="consorcio-fase2-titulo" class="font-display font-bold text-lg text-slate-900 leading-tight">Consórcio Estrutural — Fase 2 (Fundação & Alvenaria)</h3>
+                                <p class="text-xs font-semibold text-brand-700">Financiamento assumido integralmente pela mantenedora IBNP Guapó</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center gap-1.5 rounded-full bg-hope-100 px-3 py-1 text-xs font-bold text-hope-800">
+                                <span class="material-symbols-outlined text-[16px]">event_repeat</span> Vencimento todo dia {{ $consorcio['dia_vencimento'] }}
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700">
+                                <span class="material-symbols-outlined text-[16px]">payments</span> Contrato de R$ {{ number_format($consorcio['valor_total'], 0, ',', '.') }} · {{ $consorcio['total_parcelas'] }} parcelas
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="mt-7 grid gap-8 lg:grid-cols-2 lg:items-center">
+                        <div>
+                            <div class="flex items-end justify-between gap-2 mb-1.5">
+                                <p class="text-sm font-semibold text-slate-600">{{ $consorcio['parcelas_pagas'] }} de {{ $consorcio['total_parcelas'] }} parcelas pagas ({{ number_format($consorcio['percentual_pago'], 1, ',', '.') }}%)</p>
+                                <p class="font-display text-2xl font-extrabold text-brand-700">{{ number_format($consorcio['percentual_pago'], 1, ',', '.') }}%</p>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-3 mb-3 overflow-hidden">
+                                <div class="bg-gradient-to-r from-brand-600 to-hope-500 h-full rounded-full transition-all duration-1000" data-consorcio-progresso="{{ $consorcio['percentual_pago'] }}" style="width: {{ $consorcio['percentual_pago'] }}%"></div>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-x-5 gap-y-1.5 text-xs text-slate-500">
+                                <span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-slate-400">event_repeat</span> Próximo vencimento: <strong class="text-slate-900">{{ $consorcio['proximo_vencimento'] }}</strong></span>
+                                <span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-slate-400">payments</span> Parcela mensal: <strong class="text-slate-900">R$ {{ number_format($consorcio['valor_parcela'], 2, ',', '.') }}</strong></span>
+                                <span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-slate-400">trending_up</span> Referência: <strong class="text-slate-900">{{ $consorcio['mes_referencia'] }}</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
+                                <p class="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-500"><span class="material-symbols-outlined text-base text-brand-600">trending_up</span> Amortizado</p>
+                                <p class="font-display text-2xl font-extrabold text-slate-900 mt-1">R$ {{ number_format($consorcio['valor_amortizado'], 2, ',', '.') }}</p>
+                                <p class="text-xs text-slate-400 mt-0.5">Acumulado até {{ $consorcio['mes_referencia'] }}</p>
+                            </div>
+                            <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
+                                <p class="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-500"><span class="material-symbols-outlined text-base text-amber-600">payments</span> Saldo devedor</p>
+                                <p class="font-display text-2xl font-extrabold text-amber-600 mt-1">R$ {{ number_format($consorcio['saldo_devedor'], 2, ',', '.') }}</p>
+                                <p class="text-xs text-slate-400 mt-0.5">{{ $consorcio['parcelas_restantes'] }} parcelas restantes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="mt-7 flex items-start gap-2 rounded-2xl border border-amber-200 bg-amber-50/70 px-4 py-3 text-xs leading-relaxed text-amber-900">
+                        <span class="material-symbols-outlined text-base shrink-0">event_repeat</span>
+                        <span>Financiamento estrutural assumido integralmente pela mantenedora IBNP Guapó via consórcio imobiliário (vencimento todo dia 15). Este compromisso é <strong>independente das cotas de doação da Fase 3</strong> e não altera a arrecadação destinada a acabamentos e mobiliário.</span>
+                    </p>
+                </div>
+
                 {{-- Tabela de Destinação de Recursos da Fase 3 --}}
                 <div class="mt-10">
                     <h3 class="font-display font-bold text-lg text-slate-900 mb-4">Destinação Orçamentária da Obra (Fase 3)</h3>

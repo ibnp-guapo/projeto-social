@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
+use App\Services\ConsorcioFase2Service;
 use App\Services\GuapoDataSyncService;
 use App\Services\IbgeApiClient;
 use App\Services\QualityIndicatorsService;
@@ -34,6 +35,8 @@ final class EducationDashboardController
             $qualidade = null;
         }
 
+        $consorcio = (new ConsorcioFase2Service())->calcularProgresso();
+
         header('Content-Type: text/html; charset=utf-8');
 
         echo $this->blade->render('dashboard.painel', [
@@ -43,6 +46,7 @@ final class EducationDashboardController
             'piramide_etaria'    => $payload['piramide_etaria'],
             'series_historicas'  => $payload['series_historicas'],
             'qualidade'          => $qualidade,
+            'consorcio'          => $consorcio,
         ]);
     }
 

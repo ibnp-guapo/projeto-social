@@ -67,6 +67,46 @@
                             <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full"><span class="material-symbols-outlined text-[14px]">check_circle</span> 100% Concluída</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 2 — Fundação & Alvenaria</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Concretagem de fundações, elevação de paredes, lajes, cobertura metálica e tubulações hidrossanitárias do prédio central.</p>
+
+                            {{-- Painel de Transparência Financeira: Consórcio Estrutural da Fase 2 --}}
+                            <div class="mt-5 rounded-2xl border border-brand-200/80 bg-gradient-to-br from-brand-50/70 via-white to-white p-4" aria-label="Consórcio Estrutural da Fase 2">
+                                <div class="flex items-center justify-between gap-2 mb-2.5">
+                                    <span class="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-brand-800">
+                                        <span class="material-symbols-outlined text-base">account_balance</span> Consórcio Estrutural
+                                    </span>
+                                    <span class="inline-flex items-center gap-1 text-[10.5px] font-bold text-slate-600">
+                                        <span class="material-symbols-outlined text-sm">event_repeat</span> Vencimento dia {{ $consorcio['dia_vencimento'] }}
+                                    </span>
+                                </div>
+
+                                <div class="flex items-end justify-between gap-2 mb-1.5">
+                                    <p class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600">
+                                        <span class="material-symbols-outlined text-sm text-brand-600 shrink-0">payments</span>
+                                        {{ $consorcio['parcelas_pagas'] }} de {{ $consorcio['total_parcelas'] }} parcelas pagas ({{ number_format($consorcio['percentual_pago'], 1, ',', '.') }}%)
+                                    </p>
+                                    <p class="font-display text-lg font-extrabold text-brand-700">{{ number_format($consorcio['percentual_pago'], 1, ',', '.') }}%</p>
+                                </div>
+
+                                <div class="w-full bg-slate-100 rounded-full h-2.5 mb-3 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-brand-600 to-hope-500 h-full rounded-full transition-all duration-1000" data-consorcio-progresso="{{ $consorcio['percentual_pago'] }}" style="width: {{ $consorcio['percentual_pago'] }}%"></div>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="rounded-xl bg-white border border-slate-200/80 px-2.5 py-2">
+                                        <p class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide text-slate-500"><span class="material-symbols-outlined text-sm text-brand-600">trending_up</span> Amortizado</p>
+                                        <p class="font-display text-sm font-extrabold text-slate-900 mt-0.5">R$ {{ number_format($consorcio['valor_amortizado'], 2, ',', '.') }}</p>
+                                    </div>
+                                    <div class="rounded-xl bg-white border border-slate-200/80 px-2.5 py-2">
+                                        <p class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide text-slate-500"><span class="material-symbols-outlined text-sm text-amber-600">payments</span> Saldo restante</p>
+                                        <p class="font-display text-sm font-extrabold text-amber-600 mt-0.5">R$ {{ number_format($consorcio['saldo_devedor'], 2, ',', '.') }}</p>
+                                    </div>
+                                </div>
+
+                                <p class="mt-3 flex items-start gap-1.5 text-[10.5px] leading-relaxed text-slate-500">
+                                    <span class="material-symbols-outlined text-sm text-brand-600 shrink-0 mt-px">event_repeat</span>
+                                    <span>Financiamento estrutural assumido integralmente pela mantenedora IBNP Guapó via consórcio imobiliário (vencimento todo dia 15).</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="absolute left-4 md:left-1/2 w-5 h-5 bg-hope-600 rounded-full border-4 border-white md:-translate-x-2.5 mt-1 shadow-sm"></div>
@@ -75,6 +115,46 @@
                             <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full"><span class="material-symbols-outlined text-[14px]">check_circle</span> 100% Concluída</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 2 — Fundação & Alvenaria</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Fundações, paredes, lajes e cobertura metálica concluídas com sucesso.</p>
+
+                            {{-- Painel de Transparência Financeira: Consórcio Estrutural da Fase 2 --}}
+                            <div class="mt-5 rounded-2xl border border-brand-200/80 bg-gradient-to-br from-brand-50/70 via-white to-white p-4" aria-label="Consórcio Estrutural da Fase 2">
+                                <div class="flex items-center justify-between gap-2 mb-2.5">
+                                    <span class="inline-flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-wider text-brand-800">
+                                        <span class="material-symbols-outlined text-base">account_balance</span> Consórcio Estrutural
+                                    </span>
+                                    <span class="inline-flex items-center gap-1 text-[10.5px] font-bold text-slate-600">
+                                        <span class="material-symbols-outlined text-sm">event_repeat</span> Vencimento dia {{ $consorcio['dia_vencimento'] }}
+                                    </span>
+                                </div>
+
+                                <div class="flex items-end justify-between gap-2 mb-1.5">
+                                    <p class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-600">
+                                        <span class="material-symbols-outlined text-sm text-brand-600 shrink-0">payments</span>
+                                        {{ $consorcio['parcelas_pagas'] }} de {{ $consorcio['total_parcelas'] }} parcelas pagas ({{ number_format($consorcio['percentual_pago'], 1, ',', '.') }}%)
+                                    </p>
+                                    <p class="font-display text-lg font-extrabold text-brand-700">{{ number_format($consorcio['percentual_pago'], 1, ',', '.') }}%</p>
+                                </div>
+
+                                <div class="w-full bg-slate-100 rounded-full h-2.5 mb-3 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-brand-600 to-hope-500 h-full rounded-full transition-all duration-1000" data-consorcio-progresso="{{ $consorcio['percentual_pago'] }}" style="width: {{ $consorcio['percentual_pago'] }}%"></div>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="rounded-xl bg-white border border-slate-200/80 px-2.5 py-2">
+                                        <p class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide text-slate-500"><span class="material-symbols-outlined text-sm text-brand-600">trending_up</span> Amortizado</p>
+                                        <p class="font-display text-sm font-extrabold text-slate-900 mt-0.5">R$ {{ number_format($consorcio['valor_amortizado'], 2, ',', '.') }}</p>
+                                    </div>
+                                    <div class="rounded-xl bg-white border border-slate-200/80 px-2.5 py-2">
+                                        <p class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide text-slate-500"><span class="material-symbols-outlined text-sm text-amber-600">payments</span> Saldo restante</p>
+                                        <p class="font-display text-sm font-extrabold text-amber-600 mt-0.5">R$ {{ number_format($consorcio['saldo_devedor'], 2, ',', '.') }}</p>
+                                    </div>
+                                </div>
+
+                                <p class="mt-3 flex items-start gap-1.5 text-[10.5px] leading-relaxed text-slate-500">
+                                    <span class="material-symbols-outlined text-sm text-brand-600 shrink-0 mt-px">event_repeat</span>
+                                    <span>Financiamento estrutural assumido integralmente pela mantenedora IBNP Guapó via consórcio imobiliário (vencimento todo dia 15).</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

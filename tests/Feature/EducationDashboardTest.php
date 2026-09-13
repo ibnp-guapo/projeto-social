@@ -124,6 +124,21 @@ final class EducationDashboardTest extends TestCase
         }
     }
 
+    public function testPainelExibeConsorcioEstruturalNaAbaTransparencia(): void
+    {
+        [$status, $body] = $this->request('GET', '/painel-educacao');
+
+        $this->assertSame(200, $status);
+        $this->assertStringContainsString('Consórcio Estrutural', $body);
+        $this->assertStringContainsString('Fase 2 (Fundação & Alvenaria)', $body);
+        $this->assertStringContainsString('de 179 parcelas pagas', $body);
+        $this->assertStringContainsString('Amortizado', $body);
+        $this->assertStringContainsString('Saldo devedor', $body);
+        $this->assertStringContainsString('Financiamento estrutural assumido integralmente pela mantenedora IBNP Guapó', $body);
+        $this->assertStringContainsString('Contrato de R$ 500.000', $body);
+        $this->assertMatchesRegularExpression('/data-consorcio-progresso="\d+(?:\.\d+)?"/', $body);
+    }
+
     /**
      * Executa o front controller real com um request HTTP simulado.
      *

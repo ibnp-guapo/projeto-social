@@ -131,6 +131,28 @@ final class LandingPageTest extends TestCase
         }
     }
 
+    public function testLandingExibeConsorcioEstruturalDaFase2(): void
+    {
+        [$status, $body] = $this->request('GET', '/');
+
+        $this->assertSame(200, $status);
+        $this->assertStringContainsString('Consórcio Estrutural', $body);
+        $this->assertStringContainsString('de 179 parcelas pagas', $body);
+        $this->assertStringContainsString('Amortizado', $body);
+        $this->assertStringContainsString('Saldo restante', $body);
+        $this->assertStringContainsString('Financiamento estrutural assumido integralmente pela mantenedora IBNP Guapó', $body);
+        $this->assertStringContainsString('vencimento todo dia 15', $body);
+        $this->assertStringContainsString('Vencimento dia 15', $body);
+    }
+
+    public function testBarraDeProgressoConsorcioFase2UsaPercentualDinamico(): void
+    {
+        [, $body] = $this->request('GET', '/');
+
+        $this->assertMatchesRegularExpression('/data-consorcio-progresso="\d+(?:\.\d+)?"/', $body);
+        $this->assertMatchesRegularExpression('/parcelas pagas \([\d]+(?:,[\d])?%\)/', $body);
+    }
+
     /**
      * @return array{0: int, 1: string}
      */
