@@ -20,8 +20,8 @@
                         <span class="text-xs font-bold uppercase tracking-wider text-brand-700">Chave PIX Oficial</span>
                         <h3 class="font-display font-bold text-2xl text-slate-900 mt-1">Transferência Direta</h3>
                     </div>
-                    <div class="w-12 h-12 rounded-2xl bg-hope-100 text-hope-700 flex items-center justify-center text-2xl">
-                        ⚡
+                    <div class="w-12 h-12 rounded-2xl bg-hope-100 text-hope-700 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-2xl">bolt</span>
                     </div>
                 </div>
 
@@ -56,11 +56,11 @@
                             contato@escolasocialguapo.org.br
                         </code>
                         <button id="copy-pix-btn" class="px-5 py-3 bg-gradient-to-r from-hope-600 to-emerald-600 text-white text-sm font-bold rounded-2xl hover:from-hope-700 hover:to-emerald-700 transition-all shadow-md shrink-0 flex items-center gap-1.5">
-                            <span>📋</span> Copiar
+                            <span class="material-symbols-outlined text-[18px]">content_copy</span> Copiar
                         </button>
                     </div>
                     <div id="copy-feedback" class="hidden text-xs font-semibold text-hope-700 mt-2 flex items-center gap-1">
-                        <span>✓</span> Chave PIX copiada com sucesso! Cole no aplicativo do seu banco.
+                        <span class="material-symbols-outlined text-[16px]">check_circle</span> Chave PIX copiada com sucesso! Cole no aplicativo do seu banco.
                     </div>
                 </div>
 
@@ -86,21 +86,27 @@
                     <h3 class="font-display font-bold text-slate-900 text-xl mb-4">Como sua doação transforma realidades:</h3>
                     <div class="space-y-3.5">
                         <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
-                            <span class="text-2xl p-2 rounded-xl bg-brand-50 text-brand-600">🎒</span>
+                            <span class="p-2.5 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl">backpack</span>
+                            </span>
                             <div>
                                 <div class="font-display font-bold text-slate-900 text-base">R$ 30 / mês</div>
                                 <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Garante material pedagógico e lanche diário para 1 criança da primeira infância.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
-                            <span class="text-2xl p-2 rounded-xl bg-hope-50 text-hope-600">📚</span>
+                            <span class="p-2.5 rounded-xl bg-hope-50 text-hope-600 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl">menu_book</span>
+                            </span>
                             <div>
                                 <div class="font-display font-bold text-slate-900 text-base">R$ 50 / mês</div>
                                 <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Custeia tutoria individual de reforço em Língua Portuguesa e Matemática para 2 alunos do contraturno.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
-                            <span class="text-2xl p-2 rounded-xl bg-amber-50 text-amber-600">💡</span>
+                            <span class="p-2.5 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl">lightbulb</span>
+                            </span>
                             <div>
                                 <div class="font-display font-bold text-slate-900 text-base">R$ 100 / mês</div>
                                 <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Mantém a oficina de robótica educativa e tecnologia com kits práticos para uma turma inteira.</p>
@@ -158,7 +164,7 @@
                         <div id="form-error" class="hidden p-4 rounded-xl text-sm font-semibold bg-red-100 text-red-800 border border-red-200"></div>
 
                         <button type="submit" class="w-full py-3.5 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-800 transition-all shadow-md flex items-center justify-center gap-2">
-                            <span>✉️</span> Enviar Solicitação de Parceria
+                            <span class="material-symbols-outlined text-[18px]">mail</span> Enviar Solicitação de Parceria
                         </button>
                     </form>
                 </div>

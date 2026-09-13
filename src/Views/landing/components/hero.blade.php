@@ -9,10 +9,10 @@
                     Obra Fase 3 · Acabamentos a 68% Concluídos
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-hope-500/15 text-hope-300 border border-hope-500/30">
-                    <span>✓</span> Transparência & MROSC (Lei 13.019/2014)
+                    <span class="material-symbols-outlined text-[14px]">check</span> Transparência & MROSC (Lei 13.019/2014)
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-brand-500/15 text-brand-300 border border-brand-500/30">
-                    <span>🏛️</span> Escola com Auditório Multiuso
+                    <span class="material-symbols-outlined text-[14px]">account_balance</span> Escola com Auditório Multiuso
                 </span>
             </div>
 
@@ -26,13 +26,13 @@
 
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="#cotas" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-r from-brand-600 to-brand-700 text-white font-bold rounded-2xl hover:from-brand-500 hover:to-brand-600 transition-all shadow-xl shadow-brand-900/40 hover:-translate-y-0.5 text-base">
-                    <span>🤝</span> Apadrinhar uma Cota
+                    <span class="material-symbols-outlined text-[20px]">handshake</span> Apadrinhar uma Cota
                 </a>
                 <a href="#doar-pix" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-r from-hope-600 to-emerald-600 text-white font-bold rounded-2xl hover:from-hope-500 hover:to-emerald-500 transition-all shadow-xl shadow-hope-900/30 hover:-translate-y-0.5 text-base">
-                    <span>⚡</span> Doar via PIX
+                    <span class="material-symbols-outlined text-[20px]">bolt</span> Doar via PIX
                 </a>
                 <a href="/painel-educacao" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 text-white font-semibold rounded-2xl hover:bg-white/15 transition-all border border-white/20 text-base backdrop-blur-sm">
-                    <span>📊</span> Diagnóstico Completo
+                    <span class="material-symbols-outlined text-[20px]">analytics</span> Diagnóstico Completo
                 </a>
             </div>
         </div>

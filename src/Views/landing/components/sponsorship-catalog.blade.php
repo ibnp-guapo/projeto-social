@@ -22,8 +22,8 @@
                  data-cota-valor="{{ $cota['valor'] }}">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-4">
-                        <span class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
-                            {{ $cota['icone'] }}
+                        <span class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform text-brand-400">
+                            <span class="material-symbols-outlined text-2xl">{{ $cota['icone'] }}</span>
                         </span>
                         <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
                             Cota Fase 3
@@ -57,9 +57,9 @@
                         </div>
                     </div>
 
-                    <button class="abrir-modal-cota w-full py-3 bg-gradient-to-r from-brand-600 to-brand-700 text-white text-sm font-bold rounded-xl hover:from-brand-500 hover:to-brand-600 transition-all shadow-md group-hover:shadow-brand-900/50"
+                    <button class="abrir-modal-cota inline-flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r from-brand-600 to-brand-700 text-white text-sm font-bold rounded-xl hover:from-brand-500 hover:to-brand-600 transition-all shadow-md group-hover:shadow-brand-900/50"
                             data-cota-id="{{ $cota['id'] }}">
-                        Apadrinhar esta Cota
+                        <span class="material-symbols-outlined text-[18px]">volunteer_activism</span> Apadrinhar esta Cota
                     </button>
                 </div>
             </div>
@@ -81,7 +81,7 @@
         <button id="modal-cota-close" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 text-2xl leading-none transition-colors">&times;</button>
         
         <div class="text-center mb-6">
-            <div id="modal-cota-icon" class="text-5xl mb-3"></div>
+            <div id="modal-cota-icon" class="text-5xl mb-3 flex items-center justify-center"></div>
             <h3 id="modal-cota-title" class="font-display font-bold text-2xl text-slate-900"></h3>
             <p id="modal-cota-value" class="text-3xl font-extrabold text-hope-600 font-display mt-1"></p>
             <p class="text-xs text-slate-500 mt-1">Contribuição direta para os acabamentos da Fase 3</p>
@@ -93,15 +93,17 @@
                 <code id="modal-pix-key" class="flex-1 bg-white px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm font-mono text-slate-800 select-all truncate">
                     contato@escolasocialguapo.org.br
                 </code>
-                <button id="modal-copy-pix" class="px-4 py-2.5 bg-brand-600 text-white text-xs sm:text-sm font-bold rounded-xl hover:bg-brand-700 transition-colors whitespace-nowrap shadow-sm">
-                    Copiar
+                <button id="modal-copy-pix" class="inline-flex items-center gap-1.5 px-4 py-2.5 bg-brand-600 text-white text-xs sm:text-sm font-bold rounded-xl hover:bg-brand-700 transition-colors whitespace-nowrap shadow-sm">
+                    <span class="material-symbols-outlined text-[16px]">content_copy</span> Copiar
                 </button>
             </div>
-            <p id="modal-copy-feedback" class="text-xs font-semibold text-hope-600 mt-2 hidden">✓ Chave PIX copiada para a área de transferência!</p>
+            <p id="modal-copy-feedback" class="inline-flex items-center gap-1 text-xs font-semibold text-hope-600 mt-2 hidden">
+                <span class="material-symbols-outlined text-[15px]">check_circle</span> Chave PIX copiada para a área de transferência!
+            </p>
         </div>
 
-        <button id="modal-confirm-cota" class="w-full py-3.5 bg-gradient-to-r from-hope-600 to-emerald-600 text-white font-bold rounded-xl hover:from-hope-700 hover:to-emerald-700 transition-all shadow-md">
-            Informar Pagamento & Finalizar
+        <button id="modal-confirm-cota" class="inline-flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-hope-600 to-emerald-600 text-white font-bold rounded-xl hover:from-hope-700 hover:to-emerald-700 transition-all shadow-md">
+            <span class="material-symbols-outlined text-[18px]">verified</span> Informar Pagamento & Finalizar
         </button>
         <p class="text-xs text-slate-400 text-center mt-3">
             Após a transferência, você será redirecionado para enviar o comprovante.

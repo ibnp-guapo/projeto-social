@@ -108,6 +108,22 @@ final class EducationDashboardTest extends TestCase
         $this->assertStringContainsString('Lei 13.019/2014', $body);
     }
 
+    public function testPainelEducacaoUsaMaterialSymbolsEZeroEmojis(): void
+    {
+        [$status, $body] = $this->request('GET', '/painel-educacao');
+
+        $this->assertSame(200, $status);
+        $this->assertStringContainsString('fonts.googleapis.com/css2?family=Material+Symbols+Outlined', $body);
+        $this->assertStringContainsString('Plus+Jakarta+Sans', $body);
+        $this->assertStringContainsString('material-symbols-outlined', $body);
+        $this->assertStringContainsString('crisis_alert', $body);
+        $this->assertStringContainsString('trending_up', $body);
+
+        foreach (['🏛️', '📊', '🎯', '👥', '📈', '📋', '⚠️', '☀️', '🌙', '📥', '💻', 'ℹ️'] as $emoji) {
+            $this->assertStringNotContainsString($emoji, $body);
+        }
+    }
+
     /**
      * Executa o front controller real com um request HTTP simulado.
      *

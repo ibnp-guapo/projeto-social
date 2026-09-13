@@ -27,11 +27,11 @@
         var cotas = @json($cotas);
         var cota = cotas.find(function(c) { return c.id === id; });
         if (cota) {
-            modalIcon.textContent = cota.icone;
+            modalIcon.innerHTML = '<span class="material-symbols-outlined text-5xl text-brand-600">' + cota.icone + '</span>';
             modalTitle.textContent = cota.nome;
             modalValue.textContent = 'R$ ' + cota.valor.toLocaleString('pt-BR');
         } else {
-            modalIcon.textContent = '🤝';
+            modalIcon.innerHTML = '<span class="material-symbols-outlined text-5xl text-brand-600">handshake</span>';
             modalTitle.textContent = nome || 'Apadrinhar Cota';
             modalValue.textContent = valor ? 'R$ ' + Number(valor).toLocaleString('pt-BR') : '';
         }

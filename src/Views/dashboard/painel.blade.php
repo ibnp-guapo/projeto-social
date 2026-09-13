@@ -9,11 +9,11 @@
         <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between gap-4 mb-6">
                 <a href="/" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-400 hover:text-brand-300 transition-colors">
-                    <span>←</span> Voltar para o Site da Escola
+                    <span class="material-symbols-outlined text-base">arrow_back</span> Voltar para o Site da Escola
                 </a>
                 <div class="flex items-center gap-2">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-500/20 text-brand-300 border border-brand-500/30">
-                        <span>🏛️</span> Escola com Auditório Multiuso · MROSC
+                        <span class="material-symbols-outlined text-[16px]">account_balance</span> Escola com Auditório Multiuso · MROSC
                     </span>
                 </div>
             </div>
@@ -21,7 +21,9 @@
             <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
                 <div>
                     <div class="flex items-center gap-3 mb-2">
-                        <span class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white text-base">📊</span>
+                        <span class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white">
+                            <span class="material-symbols-outlined text-[20px]">analytics</span>
+                        </span>
                         <p class="text-xs font-bold uppercase tracking-widest text-brand-400 font-display">
                             Projeto Social · Diagnóstico da Educação Infantil & Contraturno Escolar
                         </p>
@@ -49,20 +51,20 @@
     <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {{-- Alternador de Visão (Tabs) - Solução da Escola em Primeiro Lugar --}}
         <div role="tablist" aria-label="Visões do diagnóstico" class="inline-flex w-full flex-wrap gap-1.5 rounded-2xl border border-slate-200/90 bg-white p-1.5 shadow-sm sm:w-auto">
-            <button type="button" id="tab-contraturno" role="tab" aria-controls="panel-contraturno" aria-selected="true" data-tab-target="panel-contraturno" class="tab-btn tab-btn-ativo flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition">
-                🎯 Solução da Escola: Educação Integral & Contraturno (6 a 14)
+            <button type="button" id="tab-contraturno" role="tab" aria-controls="panel-contraturno" aria-selected="true" data-tab-target="panel-contraturno" class="tab-btn tab-btn-ativo flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">crisis_alert</span> Solução da Escola: Educação Integral & Contraturno (6 a 14)
             </button>
-            <button type="button" id="tab-ecossistema" role="tab" aria-controls="panel-ecossistema" aria-selected="false" data-tab-target="panel-ecossistema" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition">
-                👥 Ecossistema Completo (0 a 17)
+            <button type="button" id="tab-ecossistema" role="tab" aria-controls="panel-ecossistema" aria-selected="false" data-tab-target="panel-ecossistema" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">groups</span> Ecossistema Completo (0 a 17)
             </button>
-            <button type="button" id="tab-qualidade" role="tab" aria-controls="panel-qualidade" aria-selected="false" data-tab-target="panel-qualidade" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition">
-                📈 Qualidade & IDEB (MEC / SAEB)
+            <button type="button" id="tab-qualidade" role="tab" aria-controls="panel-qualidade" aria-selected="false" data-tab-target="panel-qualidade" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">trending_up</span> Qualidade & IDEB (MEC / SAEB)
             </button>
-            <button type="button" id="tab-infancia" role="tab" aria-controls="panel-infancia" aria-selected="false" data-tab-target="panel-infancia" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition">
-                🏛️ Contexto Municipal: Primeira Infância (Dados IBGE)
+            <button type="button" id="tab-infancia" role="tab" aria-controls="panel-infancia" aria-selected="false" data-tab-target="panel-infancia" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">account_balance</span> Contexto Municipal: Primeira Infância (Dados IBGE)
             </button>
-            <button type="button" id="tab-transparencia" role="tab" aria-controls="panel-transparencia" aria-selected="false" data-tab-target="panel-transparencia" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition">
-                📋 Transparência & Finanças (MROSC)
+            <button type="button" id="tab-transparencia" role="tab" aria-controls="panel-transparencia" aria-selected="false" data-tab-target="panel-transparencia" class="tab-btn flex-1 sm:flex-none whitespace-nowrap rounded-xl px-5 py-2.5 text-xs sm:text-sm font-bold transition inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">assignment</span> Transparência & Finanças (MROSC)
             </button>
         </div>
 
@@ -136,8 +138,9 @@
                         <p>
                             Por exemplo: aos <strong>11 anos</strong>, o estudante deveria ingressar no 6º ano do Ensino Fundamental. Se ele tem 13, 14 ou 15 anos nessa etapa (devido a repetências ou interrupções), ele é classificado tecnicamente em distorção idade-série.
                         </p>
-                        <div class="p-4 rounded-2xl bg-amber-100/60 border border-amber-200 text-amber-900 font-medium">
-                            ⚠️ <strong>O Fenômeno em Guapó:</strong> Nos anos iniciais (1º ao 5º ano), a distorção é de apenas <strong>7,8%</strong>. Porém, nos anos finais (6º ao 9º ano), ela mais que dobra e atinge <strong>16,4%</strong>. Quase 1 em cada 6 adolescentes está defasado!
+                        <div class="p-4 rounded-2xl bg-amber-100/60 border border-amber-200 text-amber-900 font-medium flex items-start gap-2.5">
+                            <span class="material-symbols-outlined text-amber-700 text-lg shrink-0 mt-0.5">warning</span>
+                            <span><strong>O Fenômeno em Guapó:</strong> Nos anos iniciais (1º ao 5º ano), a distorção é de apenas <strong>7,8%</strong>. Porém, nos anos finais (6º ao 9º ano), ela mais que dobra e atinge <strong>16,4%</strong>. Quase 1 em cada 6 adolescentes está defasado!</span>
                         </div>
                     </div>
                     <div class="space-y-4">
@@ -148,15 +151,15 @@
                             </p>
                             <ul class="space-y-2 text-xs text-slate-700">
                                 <li class="flex items-start gap-2">
-                                    <span class="text-hope-600 font-bold">✓</span>
+                                    <span class="material-symbols-outlined text-hope-600 text-base shrink-0">check_circle</span>
                                     <span><strong>Reforço Escolar Diário:</strong> Alfabetização sólida e nivelamento em matemática.</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <span class="text-hope-600 font-bold">✓</span>
+                                    <span class="material-symbols-outlined text-hope-600 text-base shrink-0">check_circle</span>
                                     <span><strong>Laboratório Maker & Robótica:</strong> Atividades práticas que despertam a paixão pelo estudo.</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <span class="text-hope-600 font-bold">✓</span>
+                                    <span class="material-symbols-outlined text-hope-600 text-base shrink-0">check_circle</span>
                                     <span><strong>Auditório Multiuso:</strong> Teatro, música, xadrez e assembleias comunitárias.</span>
                                 </li>
                             </ul>
@@ -179,14 +182,18 @@
                     </p>
                     <div class="space-y-3 text-sm">
                         <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 flex items-start gap-3">
-                            <span class="text-xl">☀️</span>
+                            <span class="p-2 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-xl">wb_sunny</span>
+                            </span>
                             <div>
                                 <p class="font-bold text-slate-900 text-xs sm:text-sm">Tarde: Contraturno Escolar (6 a 14 anos)</p>
                                 <p class="text-xs text-slate-500">Aulas de música, palestras educativas, reforço coletivo e apresentações de robótica.</p>
                             </div>
                         </div>
                         <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 flex items-start gap-3">
-                            <span class="text-xl">🌙</span>
+                            <span class="p-2 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-xl">bedtime</span>
+                            </span>
                             <div>
                                 <p class="font-bold text-slate-900 text-xs sm:text-sm">Noite e Sábados: Fortalecimento das Famílias</p>
                                 <p class="text-xs text-slate-500">Cursos profissionalizantes para pais, assembleias comunitárias e eventos culturais.</p>
@@ -234,7 +241,9 @@
         <section role="tabpanel" id="panel-infancia" aria-labelledby="tab-infancia" data-tab-panel hidden>
             {{-- Disclaimer explícito: Indicador Municipal vs Solução da Escola --}}
             <div class="mt-8 p-5 rounded-3xl bg-blue-50 border border-blue-200 text-blue-900 flex flex-col sm:flex-row items-start gap-4">
-                <span class="text-3xl shrink-0">ℹ️</span>
+                <span class="p-2 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-2xl">info</span>
+                </span>
                 <div>
                     <h3 class="font-bold text-base sm:text-lg font-display text-blue-950 mb-1">
                         Nota Técnica e Institucional sobre estes Dados
@@ -378,10 +387,10 @@
                 <div class="mt-8 flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-slate-200">
                     <div class="flex items-center gap-3">
                         <a href="/api/indicadores/guapo/download" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-600 text-white text-xs sm:text-sm font-bold rounded-xl hover:bg-brand-700 transition-colors shadow-sm">
-                            <span>📥</span> Baixar Diagnóstico Consolidado (JSON)
+                            <span class="material-symbols-outlined text-[18px]">download</span> Baixar Diagnóstico Consolidado (JSON)
                         </a>
                         <a href="https://github.com/fabiooliveir/projeto-social" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white text-xs sm:text-sm font-semibold rounded-xl hover:bg-slate-800 transition-colors">
-                            <span>💻</span> Código & Dados no GitHub
+                            <span class="material-symbols-outlined text-[18px]">code</span> Código & Dados no GitHub
                         </a>
                     </div>
                     <p class="text-xs text-slate-500">

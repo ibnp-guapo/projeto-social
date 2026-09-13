@@ -43,7 +43,7 @@
         <div class="lg:col-span-5 space-y-4">
             <div class="p-4 rounded-2xl bg-slate-950/90 border border-emerald-900/40 text-xs">
                 <div class="flex items-center gap-2 text-emerald-400 font-bold mb-1.5">
-                    <span>🛡️</span>
+                    <span class="material-symbols-outlined text-[16px]">verified_user</span>
                     <span>Marco Regulatório das OSCs (Lei 13.019/2014)</span>
                 </div>
                 <p class="text-slate-300 leading-relaxed">
@@ -53,13 +53,13 @@
 
             <div class="flex flex-wrap items-center gap-3 pt-1">
                 <a href="https://ibnpguapo.org.br" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#F43517] text-white text-xs font-bold hover:bg-[#d82a0e] transition-colors shadow-sm">
-                    <span>🌐</span>
+                   class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#F43517] text-white text-xs font-bold hover:bg-[#d82a0e] transition-colors shadow-sm">
+                    <span class="material-symbols-outlined text-[16px]">public</span>
                     <span>Portal ibnpguapo.org.br</span>
                 </a>
                 <a href="https://instagram.com/ibnp_guapo" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-xs font-semibold hover:text-white hover:bg-slate-700 transition-colors border border-slate-700">
-                    <span>📸</span>
+                   class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-xs font-semibold hover:text-white hover:bg-slate-700 transition-colors border border-slate-700">
+                    <span class="material-symbols-outlined text-[16px]">photo_camera</span>
                     <span>@ibnp_guapo</span>
                 </a>
             </div>

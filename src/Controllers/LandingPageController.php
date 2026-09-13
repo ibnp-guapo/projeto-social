@@ -66,7 +66,7 @@ final class LandingPageController
         return [
             [
                 'id'    => 'salas-pedagogicas',
-                'icone' => '🪑',
+                'icone' => 'chair',
                 'nome'  => 'Cota Salas Pedagógicas',
                 'desc'  => 'Mobiliário infantil anatômico e brinquedoteca pedagógica para as salas de Educação Infantil.',
                 'valor' => 250,
@@ -76,7 +76,7 @@ final class LandingPageController
             ],
             [
                 'id'    => 'auditorio-acustico',
-                'icone' => '🎭',
+                'icone' => 'theater_comedy',
                 'nome'  => 'Cota Auditório Acústico',
                 'desc'  => 'Painéis acústicos e forro isolante para o Auditório Multiuso com capacidade de 120 pessoas.',
                 'valor' => 500,
@@ -86,7 +86,7 @@ final class LandingPageController
             ],
             [
                 'id'    => 'iluminacao-eletrica',
-                'icone' => '💡',
+                'icone' => 'lightbulb',
                 'nome'  => 'Cota Iluminação & Elétrica',
                 'desc'  => 'Refletores LED, infraestrutura cenica e sistema de iluminação profissional para eventos.',
                 'valor' => 350,
@@ -96,7 +96,7 @@ final class LandingPageController
             ],
             [
                 'id'    => 'parque-infantil',
-                'icone' => '🧩',
+                'icone' => 'toys',
                 'nome'  => 'Cota Parque Infantil Adaptado',
                 'desc'  => 'Piso emborrachado e brinquedos inclusivos para o parque infantil ao ar livre.',
                 'valor' => 150,
@@ -106,7 +106,7 @@ final class LandingPageController
             ],
             [
                 'id'    => 'contraturno-digital',
-                'icone' => '💻',
+                'icone' => 'computer',
                 'nome'  => 'Cota Contraturno Digital',
                 'desc'  => 'Computadores e kits de iniciação a robótica para as oficinas de contraturno (6 a 14 anos).',
                 'valor' => 600,

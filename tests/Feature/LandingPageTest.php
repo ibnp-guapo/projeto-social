@@ -114,6 +114,23 @@ final class LandingPageTest extends TestCase
         $this->assertStringContainsString('"taxID": "02.930.019/0001-62"', $body);
     }
 
+    public function testDesignSystemMaterialSymbolsEFontesHarmonizadas(): void
+    {
+        [$status, $body] = $this->request('GET', '/');
+
+        $this->assertSame(200, $status);
+        $this->assertStringContainsString('fonts.googleapis.com/css2?family=Material+Symbols+Outlined', $body);
+        $this->assertStringContainsString('Plus+Jakarta+Sans', $body);
+        $this->assertStringContainsString('material-symbols-outlined', $body);
+        $this->assertStringContainsString('account_balance', $body);
+        $this->assertStringContainsString('volunteer_activism', $body);
+        $this->assertStringContainsString('check_circle', $body);
+
+        foreach (['🏫', '⚡', '📍', '✉️', '📊', '🤝', '🌅', '☀️', '🌙', '🎨', '💡', '🥗', '🎭', '🚀', '⚠️'] as $emoji) {
+            $this->assertStringNotContainsString($emoji, $body);
+        }
+    }
+
     /**
      * @return array{0: int, 1: string}
      */

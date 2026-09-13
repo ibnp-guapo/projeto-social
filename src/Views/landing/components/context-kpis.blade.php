@@ -14,8 +14,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-105 transition-transform">
-                    📚
+                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-2xl">menu_book</span>
                 </div>
                 <span class="inline-block px-3 py-1 bg-brand-50 text-brand-700 text-xs font-bold rounded-full uppercase tracking-wider mb-2">
                     Contraturno Urgente
@@ -29,8 +29,8 @@
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-                <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-105 transition-transform">
-                    ⚠️
+                <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-2xl">warning</span>
                 </div>
                 <span class="inline-block px-3 py-1 bg-amber-50 text-amber-700 text-xs font-bold rounded-full uppercase tracking-wider mb-2">
                     Distorção Idade-Série (2+ anos de atraso)
@@ -44,8 +44,8 @@
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
-                <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-105 transition-transform">
-                    🏫
+                <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-2xl">school</span>
                 </div>
                 <span class="inline-block px-3 py-1 bg-rose-50 text-rose-700 text-xs font-bold rounded-full uppercase tracking-wider mb-2">
                     Déficit Estrutural
@@ -61,8 +61,8 @@
 
         <div class="bg-gradient-to-r from-brand-50 to-hope-50 rounded-3xl p-8 border border-brand-100 shadow-sm">
             <div class="flex flex-col sm:flex-row items-start gap-5">
-                <div class="w-12 h-12 rounded-2xl bg-white text-brand-600 shadow-sm flex items-center justify-center text-2xl shrink-0">
-                    🎯
+                <div class="w-12 h-12 rounded-2xl bg-white text-brand-600 shadow-sm flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-2xl">track_changes</span>
                 </div>
                 <div>
                     <h3 class="font-display font-bold text-slate-900 text-lg sm:text-xl mb-2">

@@ -13,7 +13,7 @@
                 <span class="text-slate-400 font-mono text-[11px] ml-1">(CNPJ: 02.930.019/0001-62)</span>
             </span>
             <span class="hidden lg:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-[#F43517]/15 text-[#ff8d75] border border-[#F43517]/30">
-                <span>❤️</span> Esta Igreja Ama Você
+                <span class="material-symbols-outlined text-[13px] text-[#F43517]">favorite</span> Esta Igreja Ama Você
             </span>
         </div>
 

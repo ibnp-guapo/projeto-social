@@ -7,7 +7,7 @@
 
     <meta name="description" content="@yield('description', 'Projeto social de educação infantil (a partir de 2 anos), contraturno escolar e centro comunitário multiuso em Guapó-GO. Apadrinhe uma cota e transforme vidas.')">
     <meta name="theme-color" content="#0284c7">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230284c7'><path d='M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z'/></svg>">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
@@ -61,14 +61,15 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                        display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
                     },
                     colors: {
                         brand: {
@@ -94,7 +95,23 @@
         }
     </script>
     <style>
-        h1, h2, h3, h4, .font-display { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+        body, h1, h2, h3, h4, .font-display { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1.25rem;
+            line-height: 1;
+            display: inline-block;
+            vertical-align: middle;
+            letter-spacing: normal;
+            text-transform: none;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
     </style>
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900 antialiased selection:bg-brand-500 selection:text-white">
@@ -105,7 +122,7 @@
             <div class="flex items-center justify-between h-20">
                 <a href="/" class="flex items-center gap-3 group">
                     <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-600 to-hope-600 flex items-center justify-center text-white shadow-md shadow-brand-600/20 group-hover:scale-105 transition-transform">
-                        <span class="text-xl">🏫</span>
+                        <span class="material-symbols-outlined text-2xl">school</span>
                     </div>
                     <div>
                         <span class="font-display font-bold text-slate-900 text-lg leading-tight block">Escola Social de Guapó</span>
@@ -127,7 +144,7 @@
 
                 <div class="flex items-center gap-3">
                     <a href="#doar-pix" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-hope-600 to-emerald-600 text-white text-sm font-bold rounded-xl hover:from-hope-700 hover:to-emerald-700 transition-all shadow-md shadow-hope-600/25 hover:shadow-lg hover:-translate-y-0.5">
-                        <span>⚡</span> Doar via PIX
+                        <span class="material-symbols-outlined text-[18px]">bolt</span> Doar via PIX
                     </a>
                     <button id="menu-toggle" class="md:hidden p-2.5 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100" aria-label="Abrir menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -143,7 +160,9 @@
                 <a href="#cotas" class="block px-3.5 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl">Cotas de Apoio</a>
                 <a href="/painel-educacao" class="block px-3.5 py-2.5 text-sm font-semibold text-brand-700 bg-brand-50 rounded-xl">Painel de Dados Públicos</a>
                 <a href="#contato" class="block px-3.5 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-xl">Contato & Parcerias</a>
-                <a href="#doar-pix" class="block px-4 py-3 bg-hope-600 text-white text-sm font-bold rounded-xl text-center shadow-md">Doar via PIX Instantâneo</a>
+                <a href="#doar-pix" class="block px-4 py-3 bg-hope-600 text-white text-sm font-bold rounded-xl text-center shadow-md flex items-center justify-center gap-1.5">
+                    <span class="material-symbols-outlined text-[18px]">bolt</span> Doar via PIX Instantâneo
+                </a>
             </div>
         </nav>
     </header>
@@ -163,7 +182,7 @@
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-hope-600 flex items-center justify-center text-white">
-                            <span class="text-lg">🏫</span>
+                            <span class="material-symbols-outlined text-2xl">school</span>
                         </div>
                         <div>
                             <span class="font-display font-bold text-white text-lg block">Projeto Social Guapó</span>
@@ -196,10 +215,10 @@
                     <h3 class="font-display font-bold text-white text-sm tracking-wider uppercase mb-4">Sede & Contato</h3>
                     <ul class="space-y-2.5 text-sm text-slate-400 mb-6">
                         <li class="flex items-start gap-2">
-                            <span>📍</span> <span>Rua Presidente Kennedy, Qd. 21, Lt. 13 - Centro, Guapó - GO</span>
+                            <span class="material-symbols-outlined text-brand-400 text-lg">location_on</span> <span>Rua Presidente Kennedy, Qd. 21, Lt. 13 - Centro, Guapó - GO</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span>✉️</span> <a href="mailto:contato@escolasocialguapo.org.br" class="hover:text-white transition-colors">contato@escolasocialguapo.org.br</a>
+                            <span class="material-symbols-outlined text-brand-400 text-lg">mail</span> <a href="mailto:contato@escolasocialguapo.org.br" class="hover:text-white transition-colors">contato@escolasocialguapo.org.br</a>
                         </li>
                     </ul>
                     <div class="p-3.5 bg-slate-900/90 rounded-xl border border-slate-800 text-xs text-slate-400">

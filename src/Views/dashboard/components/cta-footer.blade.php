@@ -15,25 +15,25 @@
             </div>
             <div class="flex flex-col gap-3 sm:flex-row">
                 <a href="https://github.com/fabiooliveir/projeto-social" target="_blank" rel="noopener"
-                   class="rounded-xl bg-cyan-500 px-6 py-3.5 text-center text-sm font-bold text-slate-900 shadow-sm transition hover:bg-cyan-400 focus-visible:outline-2">
-                    Quero Apoiar a Construção da Escola
+                   class="inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-500 px-6 py-3.5 text-center text-sm font-bold text-slate-900 shadow-sm transition hover:bg-cyan-400 focus-visible:outline-2">
+                    <span class="material-symbols-outlined text-[18px]">volunteer_activism</span> Quero Apoiar a Construção da Escola
                 </a>
                 <a href="/api/indicadores/guapo/download"
-                   class="rounded-xl border border-slate-600 bg-slate-800 px-6 py-3.5 text-center text-sm font-bold text-white transition hover:border-slate-500">
-                    Baixar o Diagnóstico Completo em JSON
+                   class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-600 bg-slate-800 px-6 py-3.5 text-center text-sm font-bold text-white transition hover:border-slate-500">
+                    <span class="material-symbols-outlined text-[18px]">download</span> Baixar o Diagnóstico Completo em JSON
                 </a>
             </div>
             <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
                 <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Compartilhar:</p>
                 <a href="https://wa.me/?text=Diagn%C3%B3stico%20educacional%20de%20Guap%C3%B3-GO%20-%20" target="_blank" rel="noopener"
                    data-compartilha-whatsapp
-                   class="rounded-xl border border-slate-600 bg-slate-800 px-5 py-2.5 text-center text-sm font-bold text-white transition hover:border-emerald-500 hover:text-emerald-300">
-                    WhatsApp
+                   class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-600 bg-slate-800 px-5 py-2.5 text-center text-sm font-bold text-white transition hover:border-emerald-500 hover:text-emerald-300">
+                    <span class="material-symbols-outlined text-[18px]">chat</span> WhatsApp
                 </a>
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank" rel="noopener"
                    data-compartilha-linkedin
-                   class="rounded-xl border border-slate-600 bg-slate-800 px-5 py-2.5 text-center text-sm font-bold text-white transition hover:border-cyan-400 hover:text-cyan-300">
-                    LinkedIn
+                   class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-600 bg-slate-800 px-5 py-2.5 text-center text-sm font-bold text-white transition hover:border-cyan-400 hover:text-cyan-300">
+                    <span class="material-symbols-outlined text-[18px]">share</span> LinkedIn
                 </a>
             </div>
         </div>

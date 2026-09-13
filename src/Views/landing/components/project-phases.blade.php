@@ -44,7 +44,7 @@
                 <div class="relative flex items-start gap-6 md:gap-0">
                     <div class="hidden md:block w-1/2 pr-10 text-right">
                         <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm inline-block text-left">
-                            <span class="px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full">✓ 100% Concluída</span>
+                            <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full"><span class="material-symbols-outlined text-[14px]">check_circle</span> 100% Concluída</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 1 — Diagnóstico & Engenharia</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Mapeamento dos dados do Censo IBGE e INEP, elaboração do projeto arquitetônico, estrutural e aprovação nos órgãos municipais.</p>
                         </div>
@@ -52,7 +52,7 @@
                     <div class="absolute left-4 md:left-1/2 w-5 h-5 bg-hope-600 rounded-full border-4 border-white md:-translate-x-2.5 mt-1 shadow-sm"></div>
                     <div class="md:hidden pl-12">
                         <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                            <span class="px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full">✓ 100% Concluída</span>
+                            <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full"><span class="material-symbols-outlined text-[14px]">check_circle</span> 100% Concluída</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 1 — Diagnóstico & Engenharia</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Mapeamento dos dados do Censo IBGE e INEP e aprovações legais do projeto.</p>
                         </div>
@@ -64,7 +64,7 @@
                     <div class="hidden md:block w-1/2 pr-10"></div>
                     <div class="hidden md:block w-1/2 pl-10">
                         <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                            <span class="px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full">✓ 100% Concluída</span>
+                            <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full"><span class="material-symbols-outlined text-[14px]">check_circle</span> 100% Concluída</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 2 — Fundação & Alvenaria</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Concretagem de fundações, elevação de paredes, lajes, cobertura metálica e tubulações hidrossanitárias do prédio central.</p>
                         </div>
@@ -72,7 +72,7 @@
                     <div class="absolute left-4 md:left-1/2 w-5 h-5 bg-hope-600 rounded-full border-4 border-white md:-translate-x-2.5 mt-1 shadow-sm"></div>
                     <div class="md:hidden pl-12">
                         <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                            <span class="px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full">✓ 100% Concluída</span>
+                            <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-hope-100 text-hope-700 text-xs font-bold rounded-full"><span class="material-symbols-outlined text-[14px]">check_circle</span> 100% Concluída</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 2 — Fundação & Alvenaria</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Fundações, paredes, lajes e cobertura metálica concluídas com sucesso.</p>
                         </div>
@@ -82,7 +82,7 @@
                 <div class="relative flex items-start gap-6 md:gap-0">
                     <div class="hidden md:block w-1/2 pr-10 text-right">
                         <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border border-amber-200 shadow-sm inline-block text-left">
-                            <span class="px-3 py-0.5 bg-amber-200 text-amber-900 text-xs font-bold rounded-full animate-pulse">🚀 68% Concluída · Em Execução</span>
+                            <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-amber-200 text-amber-900 text-xs font-bold rounded-full animate-pulse"><span class="material-symbols-outlined text-[14px]">rocket_launch</span> 68% Concluída · Em Execução</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 3 — Acabamentos & Mobiliário</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Piso emborrachado pedagógico, forro termoacústico, iluminação LED, pintura lavável, computadores do laboratório e cadeiras do auditório.</p>
                         </div>
@@ -90,7 +90,7 @@
                     <div class="absolute left-4 md:left-1/2 w-5 h-5 bg-amber-500 rounded-full border-4 border-white md:-translate-x-2.5 mt-1 shadow-sm animate-ping"></div>
                     <div class="md:hidden pl-12">
                         <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border border-amber-200 shadow-sm">
-                            <span class="px-3 py-0.5 bg-amber-200 text-amber-900 text-xs font-bold rounded-full">🚀 68% Concluída · Em Execução</span>
+                            <span class="inline-flex items-center gap-1 px-3 py-0.5 bg-amber-200 text-amber-900 text-xs font-bold rounded-full"><span class="material-symbols-outlined text-[14px]">rocket_launch</span> 68% Concluída · Em Execução</span>
                             <h3 class="font-display font-bold text-slate-900 text-lg mt-2">Fase 3 — Acabamentos & Mobiliário</h3>
                             <p class="text-xs text-slate-600 mt-1 leading-relaxed">Revestimentos, iluminação, mobiliário pedagógico e parque infantil adaptado.</p>
                         </div>
