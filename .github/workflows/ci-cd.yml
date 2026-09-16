@@ -50,10 +50,10 @@ jobs:
       - name: Trigger Remote Deploy via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.HOSTINGER_HOST }}
-          port: ${{ secrets.HOSTINGER_PORT }}
-          username: ${{ secrets.HOSTINGER_USER }}
-          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          host: ${{ secrets.HOSTINGER_HOST || '185.211.7.156' }}
+          port: ${{ secrets.HOSTINGER_PORT || '65002' }}
+          username: ${{ secrets.HOSTINGER_USER || 'u451023057' }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY || secrets.SSH_PRIVATE_KEY || secrets.SSH_KEY }}
           script_stop: true
           command_timeout: 120s
           script: |

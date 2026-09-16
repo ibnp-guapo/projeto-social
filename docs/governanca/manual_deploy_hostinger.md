@@ -24,13 +24,13 @@ Para que o GitHub Actions consiga autenticar na Hostinger via SSH, é necessári
 
 | Nome do Secret | Valor a Inserir | Descrição |
 |---|---|---|
-| `HOSTINGER_HOST` | `185.211.7.156` | IP do servidor da Hostinger |
-| `HOSTINGER_PORT` | `65002` | Porta SSH da Hostinger |
-| `HOSTINGER_USER` | `u451023057` | Usuário SSH da conta Hostinger |
-| `HOSTINGER_SSH_KEY` | *(Conteúdo da sua chave privada SSH)* | Conteúdo do arquivo `~/.ssh/id_rsa` (incluindo `-----BEGIN OPENSSH PRIVATE KEY-----` e `-----END OPENSSH PRIVATE KEY-----`) |
+| `HOSTINGER_SSH_KEY` (ou `SSH_PRIVATE_KEY` / `SSH_KEY`) | *(Chave privada SSH)* | Pode ser configurada tanto no repositório quanto herdada do nível da **Organização** (`ibnp-guapo`). |
+| `HOSTINGER_HOST` | `185.211.7.156` *(Opcional)* | IP do servidor da Hostinger (já possui fallback padrão no workflow). |
+| `HOSTINGER_PORT` | `65002` *(Opcional)* | Porta SSH da Hostinger (já possui fallback padrão no workflow). |
+| `HOSTINGER_USER` | `u451023057` *(Opcional)* | Usuário SSH da Hostinger (já possui fallback padrão no workflow). |
 
-> [!IMPORTANT]
-> A chave pública correspondente (`~/.ssh/id_rsa.pub`) já se encontra autorizada na Hostinger no arquivo `~/.ssh/authorized_keys`, permitindo a autenticação imediata do runner do GitHub.
+> [!NOTE]
+> Como a chave privada SSH já está configurada nos Secrets da Organização (`ibnp-guapo`), a esteira herdará a autenticação automaticamente, utilizando os parâmetros de conexão padrão pré-configurados.
 
 ---
 
